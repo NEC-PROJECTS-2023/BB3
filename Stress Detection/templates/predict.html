@@ -1,0 +1,45 @@
+<html>
+
+ <style>
+ h1 {
+  width:100%:
+  float: center;
+  display: block;
+  background-color: #333;
+  color:green;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  height:100px;
+}
+
+img {
+   background-color: #ddd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+
+}
+
+ </style>
+
+ <body>
+ 	 {% if prediction == "Negative" %}
+
+	     <h1 style="color:red">Hey you have Stress</h1>
+		<img src="https://i.pinimg.com/originals/3a/30/70/3a3070ce488cf5de3f4fb6070485c7ba.jpg" alt="this slowpoke moves" width=250>
+
+
+
+
+	  {% else %}
+		<h1>Hey you have No Stress</h1>
+		<img src = "https://i.pinimg.com/originals/4d/97/1f/4d971f3171aed1fe52625c893ebdc5f8.jpg" alt = "this slowpoke moves" width = 250>
+		<br>
+		<br>
+
+
+	{% endif %}
+ </body>
+ </html>
